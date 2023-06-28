@@ -1,4 +1,3 @@
-import mapboxGl from "mapbox-gl";
 import { useRef, useState, useEffect } from "react"
 import { API_TOKENS } from '../data/API_TOKENS'
 import mapboxgl from 'mapbox-gl'
@@ -10,7 +9,7 @@ const Globe = (props) => {
     const map = useRef(null);
     const [lng, setLng] = useState(-70.9);
     const [lat, setLat] = useState(42.35);
-    const [zoom, setZoom] = useState(5);
+    const [zoom, setZoom] = useState(1.5);
 
     useEffect(() => {
         if (map.current) return; // initialize map only once
